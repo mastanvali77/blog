@@ -1,0 +1,120 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #73a5ff, #5477f5);
+    color: #fff;
+    text-align: center;
+}
+
+/* Header */
+.header {
+    padding: 50px 0;
+    background: rgba(0, 0, 0, 0.7);
+    animation: fadeInDown 2s ease;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 3px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Bio Section */
+.bio {
+    padding: 50px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 15px;
+    animation: fadeIn 2s ease;
+}
+
+.bio img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    animation: rotate 3s linear infinite;
+}
+
+.bio h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.bio p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 20px;
+}
+
+.skills h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    animation: zoomIn 2s ease;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    animation: slideInLeft 2s ease;
+}
+
+/* Footer */
+.footer {
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7);
+    animation: fadeInUp 2s ease;
+}
+
+.footer a {
+    color: #73a5ff;
+    text-decoration: none;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    0% { opacity: 0; transform: translateY(-50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes zoomIn {
+    0% { transform: scale(0.5); }
+    100% { transform: scale(1); }
+}
+
+@keyframes slideInLeft {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(0); }
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(50px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
